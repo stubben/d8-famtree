@@ -3,7 +3,9 @@ status: true
 dependencies:
   config:
     - field.field.node.person.body
+    - field.field.node.person.field_dod
     - field.field.node.person.field_efternavn
+    - field.field.node.person.field_fodt
     - field.field.node.person.field_fornavn
     - field.field.node.person.field_kon
     - node.type.person
@@ -49,4 +51,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_dod: true
+  field_fodt: true
+  langcode: true

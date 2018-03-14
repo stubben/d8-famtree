@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dod
+    - node.type.person
+  module:
+    - datetime
+id: node.person.field_dod
+field_name: field_dod
+entity_type: node
+bundle: person
+label: Død
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
