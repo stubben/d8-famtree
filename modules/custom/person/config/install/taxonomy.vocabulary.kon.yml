@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Køn
+vid: kon
+description: ''
+hierarchy: 0
+weight: 0

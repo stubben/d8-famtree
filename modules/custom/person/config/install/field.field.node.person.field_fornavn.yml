@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fornavn
+    - node.type.person
+id: node.person.field_fornavn
+field_name: field_fornavn
+entity_type: node
+bundle: person
+label: Fornavn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
