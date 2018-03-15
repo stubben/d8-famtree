@@ -8,8 +8,12 @@ dependencies:
     - field.field.node.person.field_fodt
     - field.field.node.person.field_fornavn
     - field.field.node.person.field_kon
+    - field.field.node.person.field_profilbillede
+    - image.style.thumbnail
     - node.type.person
   module:
+    - datetime
+    - image
     - path
 id: node.person.default
 targetEntityType: node
@@ -22,6 +26,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_dod:
+    type: datetime_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_efternavn:
     weight: 8
     settings:
@@ -30,6 +40,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_fodt:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_fornavn:
     weight: 7
     settings:
@@ -47,13 +63,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
+  field_profilbillede:
+    weight: 26
     settings:
-      include_locked: true
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
   path:
     type: path
     weight: 5
@@ -100,5 +117,3 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_dod: true
-  field_fodt: true

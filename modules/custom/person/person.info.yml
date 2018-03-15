@@ -5,6 +5,8 @@ core: 8.x
 dependencies:
   - datetime
   - field
+  - file
+  - image
   - menu_ui
   - node
   - path
