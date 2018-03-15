@@ -61,6 +61,7 @@
   margin-right: 5px;
   vertical-align: middle;
 }
+.onscroll-logo img {height:35px}
 .onscroll-site-name {
   display: inline-block;
   vertical-align: middle;

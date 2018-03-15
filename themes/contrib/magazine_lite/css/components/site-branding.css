@@ -18,6 +18,7 @@
   margin-right: 10px;
   display: inline-block;
 }
+.logo img {height:50px}
 .col-md-12 .logo {
   float: none;
   margin-right: 0;
